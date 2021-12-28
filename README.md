@@ -23,9 +23,9 @@ The main improvements can be shortly summarized as
 
 ### GPIO pins
 
-As long as no JTAG debugger is used and the programmer board is not broken of,
-the GPIO pins `IO12`, `IO13`, `IO14`, `IO15` can be freely used for any
-purpose by the user.
+As long as no [JTAG debugger](#jtag-debug) is used and the programmer board is
+not broken of, the GPIO pins `IO12`, `IO13`, `IO14`, `IO15` can be freely used
+for any purpose by the user.
 
 ### Onboard LED
 
@@ -46,7 +46,7 @@ Additionally the pins `IO25` and `IO26` can be used as alternative RX and TX
 pins. This is especially usefull as long as the programming board is not
 broken off. The communication with the programmer can be kept as default UART
 while additional communication can be done with another device on a second
-UART.
+UART or vice versa.
 
 For further details check the [UART example][ref-uart-example].
 
