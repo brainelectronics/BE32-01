@@ -43,5 +43,5 @@ To start the UART example running on the BE32-01 perform one of these steps:
 
 <!-- links and other references -->
 [ref-uart-sketch]: arduino/UART/UART.ino
-[ref-main-py]: main.py
+[ref-main-py]: micropython/main.py
 [ref-example-readme]: ../README.md
