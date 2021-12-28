@@ -23,13 +23,14 @@ the previously saved file on the external flash.
 ### Arduino
 
 Open the [Flash sketch][ref-flash-sketch] in the Arduino IDE, compile and
-upload it to the board as described in the [general README][ref-root-readme]
+upload it to the board as described in the
+[example folder README][ref-example-readme]
 
 ### Micropython
 
 Copy the [`main.py`][ref-main-py] as well as the [`winbond.py`][ref-winbond-py]
 files to the BE32-01 board with the rshell as described in the
-[micropython README][ref-micropython-readme]
+[example folder README][ref-example-readme]
 
 To start the flash example running on the BE32-01 perform one of these steps:
 
@@ -44,6 +45,6 @@ May find more advanced usage on
 [ref-flash-sketch]: arduino/Flash/Flash.ino
 [ref-main-py]: micropython/main.py
 [ref-winbond-py]: micropython/winbond.py
-[ref-micropython-readme]: ../../README.md
+[ref-example-readme]: ../README.md
 [ref-brainelectronics-micopython-modules]: https://github.com/brainelectronics/micropython-modules
 

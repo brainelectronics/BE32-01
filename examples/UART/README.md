@@ -27,12 +27,13 @@ and other content on the 4x2 pinheader repeatedly every second.
 ### Arduino
 
 Open the [UART sketch][ref-uart-sketch] in the Arduino IDE, compile and
-upload it to the board as described in the [general README][ref-root-readme]
+upload it to the board as described in the
+[example folder README][ref-example-readme]
 
 ### Micropython
 
 Copy the [`main.py`][ref-main-py] file to the BE32-01 board with the rshell as
-described in the [micropython README][ref-micropython-readme]
+described in the [example folder README][ref-example-readme]
 
 To start the UART example running on the BE32-01 perform one of these steps:
 
@@ -43,4 +44,4 @@ To start the UART example running on the BE32-01 perform one of these steps:
 <!-- links and other references -->
 [ref-uart-sketch]: arduino/UART/UART.ino
 [ref-main-py]: main.py
-[ref-micropython-readme]: ../../README.md
+[ref-example-readme]: ../README.md

@@ -20,12 +20,13 @@ Search for `NeoPixel` and install the `Adafruit NeoPixel by Adafruit` library
 with the `Install` button.
 
 Open the [WS2812 sketch][ref-ws2812-sketch] in the Arduino IDE, compile and
-upload it to the board as described in the [general README][ref-root-readme]
+upload it to the board as described in the
+[example folder README][ref-root-readme]
 
 ### Micropython
 
 Copy the [`main.py`][ref-main-py] file to the BE32-01 board with the rshell as
-described in the [micropython README][ref-micropython-readme]
+described in the [micropython README][ref-example-readme]
 
 To start the WS2812 example running on the BE32-01 perform one of these steps:
 
@@ -40,5 +41,5 @@ For a more advanced usage with e.g. fading, read more on
 [ref-adafruit-lib]: https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation
 [ref-ws2812-sketch]: arduino/WS2812/WS2812.ino
 [ref-main-py]: micropython/main.py
-[ref-micropython-readme]: ../../README.md
+[ref-example-readme]: ../README.md
 [ref-brainelectronics-micopython-modules]: https://github.com/brainelectronics/micropython-modules
