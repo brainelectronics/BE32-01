@@ -113,9 +113,9 @@ the 2x3 DC3 connector the Programmer connector which can be used with e.g. the
 In order to debug an Arduino sketch ...
 
 <!-- links and other references -->
-[ref-onboard-led-example]: examples/LED/README.md
-[ref-uart-example]: examples/UART/README.md
-[ref-ws2812-example]: examples/WS2812/README.md
-[ref-external-flash-example]: examples/Flash/README.md
+[ref-onboard-led-example]: examples/LED/
+[ref-uart-example]: examples/UART/
+[ref-ws2812-example]: examples/WS2812/
+[ref-external-flash-example]: examples/Flash/
 
 [ref-esp-prog-board]: https://docs.espressif.com/projects/espressif-esp-iot-solution/en/latest/hw-reference/ESP-Prog_guide.html
