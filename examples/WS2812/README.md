@@ -21,12 +21,12 @@ with the `Install` button.
 
 Open the [WS2812 sketch][ref-ws2812-sketch] in the Arduino IDE, compile and
 upload it to the board as described in the
-[example folder README][ref-root-readme]
+[example folder README][ref-example-readme]
 
 ### Micropython
 
 Copy the [`main.py`][ref-main-py] file to the BE32-01 board with the rshell as
-described in the [micropython README][ref-example-readme]
+described in the [example folder README][ref-example-readme]
 
 To start the WS2812 example running on the BE32-01 perform one of these steps:
 
