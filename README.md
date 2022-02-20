@@ -19,6 +19,8 @@ The main improvements can be shortly summarized as
  - [JTAG debug connector](#jtag-debug)
  - [selectable UART pins](#uart)
 
+<a href="https://www.tindie.com/stores/brainelectronics/?ref=offsite_badges&utm_source=sellers_brainelectronics&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+
 ## Peripherals
 
 ### GPIO pins
@@ -108,6 +110,26 @@ As marked on the back of the programmer PCB, the 2x5 DC3 connector is the JTAG,
 the 2x3 DC3 connector the Programmer connector which can be used with e.g. the
 [ESP Prog Board][ref-esp-prog-board].
 
+## Flash firmware
+
+To flash the [micropython firmware][ref-upy-firmware-download] as described on
+the micropython firmware download page, use the `esptool.py` to erase the
+flash before flashing the firmware.
+
+```bash
+esptool.py --chip esp32 --port /dev/tty.SLAB_USBtoUART erase_flash
+esptool.py --chip esp32 --port /dev/tty.SLAB_USBtoUART --baud 921600 write_flash -z 0x1000 esp32-20220117-v1.18.bin
+```
+
+If the Micropython board is equipped with an external PSRAM chip, the
+`esp32spiram-20220117-v1.18.bin` can also be used for ESP32 devices. If there
+is no external PRSAM only the non SPIRAM version is working.
+
+In case of an error during upload, disconnect everything except the programmer.
+A connected UART converter on the JTAG pins might be the root cause.
+
+    A fatal error occurred: Timed out waiting for packet content
+
 ### Usage
 
 In order to debug an Arduino sketch ...
@@ -119,3 +141,4 @@ In order to debug an Arduino sketch ...
 [ref-external-flash-example]: examples/Flash/
 
 [ref-esp-prog-board]: https://docs.espressif.com/projects/espressif-esp-iot-solution/en/latest/hw-reference/ESP-Prog_guide.html
+[ref-upy-firmware-download]: https://micropython.org/download/
